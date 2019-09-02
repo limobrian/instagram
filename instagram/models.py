@@ -22,6 +22,16 @@ class Profile(models.Model):
         return self.profile.user
 
 class Image(models.Model):
+    image = models.ImageField(upload_to ='pictsagram/')
+    image_caption = models.CharField(max_length=700)
+    tag_someone = models.CharField(max_length=50,blank=True)
+    imageuploader_profile = models.ForeignKey(User, on_delete=models.CASCADE,null='True', blank=True)
+    image_likes = models.ManyToManyField('Profile', default=False, blank=True, related_name='likes')
+    date = models.DateTimeField(auto_now_add=True, null= True)
+
+    '''Method to filter database results'''
+    def __str__(self):
+        return self.image_caption
 
 class Comments (models.Model):
     comment_post = models.CharField(max_length=150)
