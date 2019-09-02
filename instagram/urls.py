@@ -6,6 +6,9 @@ from django.shortcuts import render, redirect
 
 urlpatterns=[
     path('',views.index, name='index'),
+    path('explore',views.explore,name ='explore'),
+    path('notification',views.notification,name ='notification'),
+    path('profile',views.profile,name ='profile'),
 ]
 
 
