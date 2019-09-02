@@ -25,3 +25,6 @@ class Comments (models.Model):
     commented_image = models.ForeignKey('Image', on_delete=models.CASCADE)
     date = models.DateTimeField(auto_now_add=True)
 
+    def __str__(self):
+        return self.autho
+
