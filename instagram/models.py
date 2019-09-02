@@ -1,13 +1,11 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
-
 from django.contrib.auth.models import User
-
 from django.db import models
+import datetime
+
 from django.db.models.signals import post_save
 from django.dispatch import receiver
-
-import datetime
 
 # Create your models here.
 
@@ -22,6 +20,8 @@ class Profile(models.Model):
 
     def __str__(self):
         return self.profile.user
+
+class Image(models.Model):
 
 class Comments (models.Model):
     comment_post = models.CharField(max_length=150)
