@@ -9,6 +9,8 @@ urlpatterns=[
     path('explore',views.explore,name ='explore'),
     path('notification',views.notification,name ='notification'),
     path('profile',views.profile,name ='profile'),
+    path('logout',views.index,{'next_page': 'accounts:login'}, name='logout'),
+    
 ]
 
 
