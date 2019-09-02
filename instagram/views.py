@@ -22,5 +22,9 @@ def explore(request):
 def notification(request):
     return render(request, 'display/notification.html')
 
+@login_required(login_url='/accounts/login/')
+def profile(request):
+    return render(request, 'display/userprofile.html')
+
 
 
