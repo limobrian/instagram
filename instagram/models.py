@@ -18,3 +18,6 @@ class Profile(models.Model):
 
     def __str__(self):
         return self.profile.user
+
+class Comments (models.Model):
+    
