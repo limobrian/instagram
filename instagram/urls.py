@@ -9,6 +9,7 @@ urlpatterns=[
     path('explore',views.explore,name ='explore'),
     path('notification',views.notification,name ='notification'),
     path('profile',views.profile,name ='profile'),
+    path('login',views.login,name ='login'),
     path('logout',views.index,{'next_page': 'accounts:login'}, name='logout'),
     path('upload',views.upload,name ='upload'),
 ]
