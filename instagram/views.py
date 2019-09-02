@@ -26,5 +26,8 @@ def notification(request):
 def profile(request):
     return render(request, 'display/userprofile.html')
 
+def logout(request):
+    return render(request, 'registration/logout.html')
+
 
 
