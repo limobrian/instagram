@@ -16,14 +16,11 @@ Including another URLconf
 from django.conf.urls import include, url
 from django.conf.urls import url
 from django.contrib import admin
-
-
 from instagram import views
-
 from django.conf.urls.static import static
 
 urlpatterns = [
-    url(r'^admin/', admin.site.urls),
-    url('', include('insta.urls')),
-    url('accounts/', include('registration.backends.simple.urls'))
+    path('admin/', admin.site.urls),
+    path('', include('gram.urls')),
+    path('accounts/', include('registration.backends.simple.urls')),
 ]
