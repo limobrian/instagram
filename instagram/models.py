@@ -22,7 +22,7 @@ class Profile(models.Model):
         return self.profile.user
 
 class Image(models.Model):
-    image = models.ImageField(upload_to ='pictsagram/')
+    image = models.ImageField(upload_to ='pictsainstagram/')
     image_caption = models.CharField(max_length=700)
     tag_someone = models.CharField(max_length=50,blank=True)
     imageuploader_profile = models.ForeignKey(User, on_delete=models.CASCADE,null='True', blank=True)
