@@ -20,4 +20,8 @@ class Profile(models.Model):
         return self.profile.user
 
 class Comments (models.Model):
-    
+    comment_post = models.CharField(max_length=150)
+    author = models.ForeignKey('Profile',related_name='commenter' , on_delete=models.CASCADE)
+    commented_image = models.ForeignKey('Image', on_delete=models.CASCADE)
+    date = models.DateTimeField(auto_now_add=True)
+
