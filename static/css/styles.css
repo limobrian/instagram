@@ -95,5 +95,27 @@
                                           width: 32px;
                                           border-radius: 100%;
                                       }
+
+
+                                      .explorebody{
+                                        margin-top: 15%;
+  
+                                      }
+  
+  
+                                      .explorepics {
+                                        column-count: 3;
+                                        column-gap: 10px;
+                                        top: 10;
+  
+  
+                                      }
+  
+                                      .picspace{
+                                          
+                                        padding: 20px;
+                                        padding-bottom: 70px;
+  
+  
   
   
