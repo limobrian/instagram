@@ -60,4 +60,40 @@
                                     .phonenav{
                                         display: none;
                                     }
+
+
+                                    .homebody{
+                                        margin-top: 13%;
+                                        margin-left: 25%;
+  
+                                      }
+  
+                                      .navbar-fixed-bottom{
+                                          display: none;
+                                      }
+  
+  
+                                      .panel-primary{
+                                        width: 56%;
+                                        border-color: rgb(216, 209, 209)!important;
+                                      }
+  
+                                      .imagepadding{
+                                          padding-bottom: 70px;
+                                      }
+  
+                                      /* Home Profile pic above post */
+  
+                                      .usernamehome-dp{
+                                          font-size: 15px;
+                                          margin-top: 15px;
+                                          margin-left: 3%;
+                                      }
+                                      
+                                      .circlehome-dp{
+                                          height: 32px;
+                                          width: 32px;
+                                          border-radius: 100%;
+                                      }
+  
   
