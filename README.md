@@ -1,4 +1,5 @@
-# Author: Munyi Mwangi
+# Author:limoo brian
+
 
 A web app that takes on the fetaures of the existing instagram. Designed for learning purposes.
 [Live Site](https://shashin-o-mimasu.herokuapp.com/login/)
