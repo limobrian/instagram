@@ -29,7 +29,7 @@ end
 # unset irrelevant variables
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV "/home/limooh/Documents/Django/IP2/virtual"
+set -gx VIRTUAL_ENV "/home/limooh/Documents/Django/Instagram/virtual"
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/bin" $PATH
